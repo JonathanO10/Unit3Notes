@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first_name">
+            </div>
+        </div>
+            <div>
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last_name">
+                <button id="button1">Say hello</button>
+            </div>
+        <ul></ul>
+    </div>
+</div>
+<script>
+    const firstName = document.getElementById('first');
+    const lastName = document.getElementById('last');
+    const button1 = document.getElementById('button1');
+    const full = document.querySelector('ul');
+
+    button1.addEventListener('click', function(e){
+        let first = firstName.value;
+        let last = lastName.value;z
+        let newElement = document.createElement('li');
+        newElement.textContent =  `Hello ${first} ${last}`;
+        full.insertAdjacentElement('afterbegin', newElement);
+    });
+
+</script>
+</body>
+</html>

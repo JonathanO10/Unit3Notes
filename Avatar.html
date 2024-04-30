@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose an Avatar</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="continer">
+
+</div>
+<div class="content">
+    <h1>Choose an Avatar</h1>
+    <img src="https://media1.tenor.com/m/lPjVxg0BXJ4AAAAC/gandalf-happy.gif">
+    <div class="row">
+        <button id="button1">button1</button>
+        <button id="button2">button2</button>
+        <button id="button3">button3</button>
+        <button id="button4">button4</button>
+        <button id="button5">button5</button>
+        <button id="button6">button6</button>
+    </div>
+</div>
+<script>
+    const picture = document.querySelector('img');
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const button3 = document.getElementById('button3');
+    const button4 = document.getElementById('button4');
+    const button5 = document.getElementById('button5');
+    const button6 = document.getElementById('button6');
+
+    button1.addEventListener('click', function(e){
+        picture.src = 'https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Mr._Incredible.png/220px-Mr._Incredible.png'
+    });
+    button2.addEventListener('click', function(e){
+        picture.src = 'https://upload.wikimedia.org/wikipedia/en/2/25/Image_of_Dashiell_%22Dash%22_Par_as_he_appears_in_The_Incredibles_and_it%27s_sequel.png'
+    });
+    button3.addEventListener('click', function(e){
+        picture.src = 'https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Gru_%28Despicable_Me%29.png/130px-Gru_%28Despicable_Me%29.png   '
+    });
+    button4.addEventListener('click', function(e){
+        picture.src = 'https://tiermaker.com/images/chart/chart/despicable-me--minions-characters-330313/33jpg.png'
+    });
+    button5.addEventListener('click', function(e){
+        picture.src = 'https://upload.wikimedia.org/wikipedia/en/6/6a/Mike_Wazowski.png'
+    });
+    button6.addEventListener('click', function(e){
+        picture.src = 'https://miro.medium.com/v2/resize:fit:292/0*-_yDAcI1MVlQiFrG.jpg'
+    });
+
+</script>
+</body>
+</html>
